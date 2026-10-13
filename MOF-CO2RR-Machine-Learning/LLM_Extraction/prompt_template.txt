@@ -1,0 +1,21 @@
+You are extracting experimental photocatalytic CO2-reduction records from a scientific article.
+
+RULES
+1. Extract only information explicitly supported by the supplied text. Do not infer unreported values.
+2. Use null for missing/unreported information; never convert missing to zero.
+3. Keep catalyst identity tied to the correct experimental conditions and product/performance result.
+4. If the same catalyst is tested under different conditions, create separate records.
+5. If multiple products are reported for one condition, create one row per reported product while keeping the same condition fields.
+6. Preserve the reported performance unit. Do not normalize units in the extraction stage.
+7. Distinguish photosensitizer, sacrificial electron donor, and other additives when the text supports that distinction.
+8. Provide a short source_anchor copied/paraphrased from the local text that permits manual verification.
+9. Return JSON only and conform to the schema.
+
+JSON SCHEMA
+{SCHEMA}
+
+RETRIEVED ANNOTATED EXAMPLES
+{EXAMPLES}
+
+TEXT TO EXTRACT
+{TEXT}

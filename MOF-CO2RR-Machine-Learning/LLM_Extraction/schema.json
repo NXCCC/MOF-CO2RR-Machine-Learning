@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": ["records"],
+  "properties": {
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "catalyst": {"type": ["string", "null"]},
+          "metal_node": {"type": ["string", "null"]},
+          "linker": {"type": ["string", "null"]},
+          "phase": {"type": ["string", "null"]},
+          "solvent": {"type": ["string", "null"]},
+          "sacrificial_donor": {"type": ["string", "null"]},
+          "photosensitizer": {"type": ["string", "null"]},
+          "additive": {"type": ["string", "null"]},
+          "reaction_time_h": {"type": ["number", "string", "null"]},
+          "reaction_temp_c": {"type": ["number", "string", "null"]},
+          "catalyst_mass_mg": {"type": ["number", "string", "null"]},
+          "co2_pressure_bar": {"type": ["number", "string", "null"]},
+          "light_type": {"type": ["string", "null"]},
+          "product": {"type": ["string", "null"]},
+          "performance_value": {"type": ["number", "string", "null"]},
+          "performance_unit": {"type": ["string", "null"]},
+          "source_anchor": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}

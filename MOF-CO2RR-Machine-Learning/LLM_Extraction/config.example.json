@@ -1,0 +1,24 @@
+{
+  "provider": "openai-compatible",
+  "base_url": "https://YOUR-ENDPOINT/v1",
+  "api_key_env": "LLM_API_KEY",
+  "model": "EXACT_MODEL_AND_VERSION_USED_IN_MANUSCRIPT",
+  "access_date": "YYYY-MM-DD",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_tokens": 4000,
+  "seed": null,
+  "bm25_k": 5,
+  "chunk_max_chars": 7000,
+  "chunk_overlap_paragraphs": 1,
+  "numeric_relative_tolerance": 0.01,
+  "numeric_absolute_tolerance": 1e-8,
+  "record_match_threshold": 0.55,
+  "low_confidence_alignment_threshold": 0.75,
+  "field_groups": {
+    "catalyst_identity": ["catalyst", "metal_node", "linker"],
+    "reaction_conditions": ["phase", "solvent", "sacrificial_donor", "photosensitizer", "additive", "reaction_time_h", "reaction_temp_c", "catalyst_mass_mg", "co2_pressure_bar", "light_type"],
+    "products": ["product"],
+    "performance": ["performance_value", "performance_unit"]
+  }
+}
