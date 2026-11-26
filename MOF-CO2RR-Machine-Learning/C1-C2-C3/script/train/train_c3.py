@@ -1,9 +1,3 @@
-"""Train and evaluate the C3 photocatalytic CO2 reduction product classifier.
-
-Uses the original notebook's 'All' feature group, preprocessing, SMOTE,
-XGBoost hyperparameters, and ten stratified 80/20 splits (seeds 42–51).
-No feature selection, plots, or SHAP analysis is performed.
-"""
 from __future__ import annotations
 
 import argparse
