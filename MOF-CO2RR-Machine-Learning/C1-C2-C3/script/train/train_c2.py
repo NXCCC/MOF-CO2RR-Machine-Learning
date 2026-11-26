@@ -1,10 +1,3 @@
-"""Train and evaluate the C2 high-performance classifier for photocatalytic MOFs.
-
-Uses a fixed descriptor set (no automated feature selection), and produces no plots.
-The target is defined by the 60th percentile of the filtered input data, as in
-its source notebook. The evaluation uses ten stratified 80/20 splits (seeds 0–9).
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -149,7 +142,7 @@ def train(input_csv: Path, output_dir: Path, sampling: str, save_model: bool):
 
 def main():
     parser = argparse.ArgumentParser(description="C2 MOF high-performance model training (no plots/feature selection)")
-    parser.add_argument("--input", type=Path, default=Path("data/Data_reg_fixed_final.csv"))
+    parser.add_argument("--input", type=Path, default=Path("data"))
     parser.add_argument("--output-dir", type=Path, default=Path("results"))
     parser.add_argument("--sampling", choices=["smote", "none"], default="smote")
     parser.add_argument("--no-save-model", action="store_true")
